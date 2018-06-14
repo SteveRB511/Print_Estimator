@@ -1,0 +1,18 @@
+HTML Field and Control Names
+
+Print Material Controls
+
+Size Control IDs
+	COMMONSIZES
+		printSelectSize
+		
+	CUSTOMSIZES
+		paperShortSide
+		paperLongSide
+		
+	NORITSUSIZES
+		noritsuSelectSize
+
+Laminate Controls
+
+Mounting Controls

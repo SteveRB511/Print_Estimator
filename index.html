@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- DW6 -->
+<head>
+<title>Print Estimator v0.4, 25 Nov 2014</title>
+<script src="estimator.js" type="text/javascript"></script>
+<link href="estimator.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="calculateEstimate()">
+
+      <form id="estimator">
+        
+       	<!-- PRINTING AND MOUNTING -->
+        <fieldset id="printing">
+          <legend>Paper, Laminating, and Mounting</legend>
+          <p>
+            <label>Paper Type</label><br>
+            <label>
+              <input type="radio" name="paperType" value="smooth"    onclick="updateEstimate( 'paperType', 'smooth' )" checked>Smooth Art Paper (Bond)</label><br>
+            <label>
+              <input type="radio" name="paperType" value="premium"   onclick="updateEstimate( 'paperType', 'premium' )">Premium (Matte or Gloss)</label><br>
+            <label>
+              <input type="radio" name="paperType" value="photobase" onclick="updateEstimate( 'paperType', 'photobase' )">Photobase (Satin)</label>
+          </p>
+          
+          <p>
+          <label>Common Paper Sizes</label><br>
+          <select name="paperSize" id="paperSize" size="1" onChange="updateEstimate( 'paperSize', 0 )">
+          	<option value="letter">Letter (8.5" x 11")</option>
+          	<option value="tabloid_1">Tabloid (11" x 17")</option>
+          	<option value="poster_1">Poster (18" x 24")</option>
+           	<option value="poster_2">Poster (24" x 36")</option>
+         	<option value="custom">Custom Size</option>
+          </select>
+          </p>
+          
+          <p>
+            <label>Custom Paper Size (inches)</label><br>
+            <label>Short Side 
+            <input type="text" id="paperShortSide" size="4" value="8.5"  onkeyup="updateEstimate( 'paperSizeFields', 0 )"/></label>&nbsp;&nbsp;&nbsp;
+            <label>Long Side
+            <input type="text" id="paperLongSide"  size="4" value="11.0" onkeyup="updateEstimate( 'paperSizeFields', 0 )"/></label>
+          </p>
+         <div id="treatments"> 
+         <p>
+            <label>Laminating Needed?</label><br>
+            <label>
+              <input  type="radio" name="laminate" value="no"  onclick="updateEstimate( 'laminate', 'no' )" checked/>No</label><br>
+            <label>
+              <input  type="radio" name="laminate" value="yes" onclick="updateEstimate( 'laminate', 'yes' )"/>Yes</label>
+         </p><br>
+ 
+         <p>
+            <label>Mounting Board Needed?</label><br>
+            <label>
+              <input type="radio" name="mounting" value="no"      onclick="updateEstimate( 'mounting', 'no' )" checked>No</label><br>
+            <label>
+              <input type="radio" name="mounting" value="medium"  onclick="updateEstimate( 'mounting', 'medium' )">3/16-inch</label><br>
+            <label>
+              <input type="radio" name="mounting" value="heavy"   onclick="updateEstimate( 'mounting', 'heavy' )">1/2-inch</label>
+          </p>
+          </div>
+        </fieldset>
+
+        <!-- COPIES -->
+        <fieldset id="copies">
+          <legend>Copies Needed</legend>
+          <p>
+            <label>Number of Copies Needed</label>
+            <input type="text" id="copiesNeeded" name="copies" size="4" value="1" onkeyup="updateEstimate( 'copies', 0 )"/>
+          </p>
+          
+          <p>
+            <label>Proof Needed? (11" x 17")</label><br>
+            <label>
+              <input  type="radio" name="proof" value="no"  onclick="updateEstimate( 'proof', 'no' )" checked/>No</label><br>
+            <label>
+              <input  type="radio" name="proof" value="yes" onclick="updateEstimate( 'proof', 'yes' )"/>Yes</label>
+          </p>
+          <div class="typeCharges">
+          	<p>
+          		<div>Materials Charge: $<span id="materialsCharge"></span></div>
+          	</p>
+          </div>
+        </fieldset>
+      
+        <!-- Labor and Machine rates -->
+        <fieldset id="hours">
+          <legend>Labor and Machine Rates</legend>
+          <p>
+            <label>Labor Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"  id="laborHours" name="laborHours" size="4" value="1" onkeyup="updateEstimate( 'laborHours', 0 )"/>
+         </p>
+          
+          <p>
+            <label>Labor Funding</label><br>
+            <label>
+              <input type="radio" name="laborFunding" value="yes" onclick="updateEstimate( 'laborFunding', 'indirect' )" checked/>Indirect</label><br>
+            <label>
+              <input type="radio" name="laborFunding" value="no"  onclick="updateEstimate( 'laborFunding', 'direct' )"/>Direct</label><br><br>
+          </p>
+         
+          <p>
+            <label>Machine Hours</label>
+            <input type="text" id="machineHours" name="machineHours" size="4" value="1" onkeyup="updateEstimate( 'machineHours', 0 )"/>
+         </p>
+         
+          <div  class="typeCharges">
+          	<p>
+            	<div>Labor Charge: $<span id="laborCharge"></span></div>
+          	</p>
+            <br><br><br><br><br>
+           	<p>
+           	 	<div>Machine Charge: $<span id="machineCharge"></span></div>
+          	</p>
+          </div>
+        </fieldset>
+        
+        <fieldset id="total">
+           <legend>Estimate Total</legend>
+           <p>
+            <div>Estimate: $<span style="font-weight:bold; color:#00F;" id="estimate"></span><br></div>
+           </p>
+        </fieldset>
+      </form>
+      <script type="text/javascript">document.getElementById("estimator").reset();</script> <!-- reset form for Firefox -->
+</body>
+</html>

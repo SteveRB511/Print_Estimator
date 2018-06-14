@@ -1,0 +1,75 @@
+Issues to fix:
+- Short Side field
+- Paper short side cannot exceed 42"
+- Vinyl short side???
+- Laminate short cannot exceed sheet width - 2" ?
+- function to fit prints to paper based on size ???
+
+- Canvas
+	updating length does not change paper-type cost which was set when canvas was selected
+
+
+=========================================================
+36" paper is more than 42" (don't know why).  Let's make the cost calculations for 36" and 
+42" wide paper consistent with the way costs are calculated for other/custom.  I would like it to be as 
+simple as possible.  So any suggestions you have would be great.  Also the cost should be different for 
+specific paper types.
+
+Thanks again for your help
+
+
+
+
+-----Original Message-----
+Sent: Wednesday, October 12, 2016 10:24 AM
+
+
+mounting is not required for the canvas and vinyl prints, but we will need it for the 
+Noritsu.
+
+
+-----Original Message-----
+Sent: Tuesday, October 11, 2016 10:36 AM
+
+
+Thanks again. Please update the tool to reflect printing.
+
+Please add the following:
+
+Rates  $131.05 (direct funding)
+Rates  $105.15 (indirect funding)
+
+Paper 36" Wide (it's $7.00 per ft)
+Smooth Art Paper (bond)
+Premium (Matte or Gloss)
+Photobase (Satin)
+
+42" Wide (it's $6.00 per ft)
+Smooth Art Paper (bond)
+Premium (Matte or Gloss)
+Photobase (Satin)
+
+36" Canvas prints
+$25.00 per ft
+
+Noritsu Photo Prints (per print)
+3x5 ($2.00)
+5x7 ($3.00)
+8x10 ($4.00)
+11x14 ($5.00)
+11x17 ($6.00)
+12x18 ($7.00)
+
+Flat Signage Vinyl (per sq ft)
+$1.00
+
+Laminating $5.00 per ft
+
+CODA (gator board) 3/16" $6.00
+CODA (gator board) 1/2" $7.00
+
+Remove machine rate (we no longer have machine rates)
+
+
+Thanks so much,
+

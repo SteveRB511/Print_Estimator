@@ -1,0 +1,38 @@
+Example: Three 20"x40" laminated posters on 1/2" foamboard
+
+Paper Type: Smooth Art Paper (Bond)
+
+Materials Totals
+
+	Area per poster = 20 * 40 / 144 = 5.56 (6 rounded up)
+	
+	Paper Only: 3 * ($40.00 + 6 * $2.00) = $156
+	
+		copies:						  3
+		paper size cost per copy:	$40 (size between 18x28 and 27x40)
+		paper area per copy:		  6 (rounded up)
+		paper type cost:			 $2 (per sq. ft)
+
+
+
+
+	
+	Mounting Costs Only: 3 * 6 * $7.00    = 126
+	
+		copies:						      3
+		mounting board area per copy:	  6 (rounded up)
+		mounting board cost:			 $7 (per sq. ft)
+
+
+
+	
+
+	Laminating Costs: = 6 * $1.00	     =   $6
+	
+		linear feet:                          6* 
+		laminate cost:						 $1 (per linear foot)
+
+
+		*  3 Rows: 3 * 20" + 2" = 62", 6 feet rounded up
+
+Total materials cost: $288
